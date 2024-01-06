@@ -1,0 +1,221 @@
+/* Add this styling to your existing CSS or create a new CSS file */
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+  }
+
+
+.stick_follow_icon a svg {
+  padding-top:20px;
+  height: 30px; /* Adjust the height as needed */
+  width: 30px;  /* Adjust the width as needed */
+}
+
+
+.stick_follow_icon {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+  justify-content: center;
+  padding: 40px 0;
+  position: fixed;
+  top: 30%;
+  width: auto;
+}
+
+.stick_follow_icon ul {
+  list-style-type: none; /* Remove default list-style-type (bullets) */
+  padding-left: 9px; /* Remove default padding for list items */
+  margin: 0; /* Remove default margin for list items */
+}
+  
+  header {
+    z-index: 1000;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+    height: 10px;
+    position: fixed;
+    width: 100%;
+  }
+
+.maindiv{
+  background-color: #010525;
+  height: 700px;
+}
+  
+.header-content {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .resume{
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
+    margin: 50px;
+    border-width: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid; /* Initial border color, you can set it to transparent */
+    border-color: rgb(0, 255, 255);
+    transition: color 0.3s, transform 0.3s, border-color 0.3s;
+  }
+
+  .resume:hover{
+    background-color: rgb(0, 255, 251);
+    color: #ff0000;
+    font-size: 30px;
+    border-color: #cd0000;
+  }
+
+  .resume::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+    font-weight: lighter;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    background-color: #060517;
+    color: white;
+    padding-bottom:200px;
+    padding: 150px;
+  }
+  
+  #profile {
+    border-radius: 50%;
+    margin-right: 30px;
+    width: 400px; /* Adjust the size as needed */
+    height: 400px;
+    font-weight: lighter;
+  }
+  
+  .name {
+    text-align: left;
+  }
+
+  .opening{
+    font-size: 30px;
+    margin: 0px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .name h1 {
+    margin: 0;
+  font-size: 50px;
+  font-weight: lighter; 
+  text-shadow: 0 0 20px #00f7ff;
+  animation: colorRhythm 5s linear ;
+  }
+  
+  .opening-line { /* Use a cursive font for the opening line */
+    font-size: 10px; /* Adjust the font size as needed */
+    font-weight: 300;
+    opacity: 2; /* Initial opacity set to 0 for fade-in effect */
+    transform: scale(0.5); /* Initial scale set to 0.5 for zoom-in effect */
+    
+  }
+
+  .typing-animation {
+    font-size: 20px;
+    overflow: hidden;
+  white-space: nowrap;
+  animation: typing 6s steps(250) infinite;
+  padding-top: 30px;
+  font-weight: lighter;
+  }
+
+  nav a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 17px;
+    font-size: 30px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: lighter;
+    z-index: 1000;
+    border-bottom: 2px solid transparent; /* Initial border color, you can set it to transparent */
+    transition: color 0.3s, transform 0.3s, border-color 0.3s;
+  }
+
+  nav a:not(:hover) {
+    border-color: transparent; /* Set the default border color when not hovered */
+}
+  
+  nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s;
+    font-weight: lighter;
+  }
+  
+  nav a:hover {
+    color: #cd0000; /* Change the text color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Change the background color on hover */
+    transition: transform 0.5s;
+    border-color: #cd0000; 
+  }
+  
+  nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    font-weight: lighter;
+  }
+
+  @keyframes colorRhythm {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+       color: #ffffff;
+      text-shadow: 0 0 10px #00f7ff
+    }
+    18.1%, 20.1%, 30%, 50%, 50.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+      color: #ffffff;
+      text-shadow: 0 0 10px #00f7ff,
+      0 0 20px #00f7ff,
+      0 0 40px #00f7ff,
+      0 0 80px #00f7ff,
+      0 0 160px #00f7ff;
+    }
+  }
+
+  
+  @keyframes typing {
+    from {
+      width: 0; /* Initially, the width is 0, hiding characters */
+    }
+    to {
+      width: 100%; /* At the end, the width is 100%, revealing all characters */
+    }
+  }
+  
