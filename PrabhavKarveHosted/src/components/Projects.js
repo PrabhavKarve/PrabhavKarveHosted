@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="projects" id='projects'>
       <h2>Projects</h2>
-      <h1 class = "projectHeader">___________ Some of my creations ___________</h1>
+      <h1 class = "projectHeader">___________ Some of my work ___________</h1>
         <div class="card-container">
           <div class = "card">
             <div class = "card-content">
